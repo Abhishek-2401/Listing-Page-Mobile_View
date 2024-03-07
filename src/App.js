@@ -6,7 +6,7 @@ import LocationCategories from './Components/Categories.jsx';
 import BottomButtons from './Components/Bottom-buttons.jsx';
 import SortingScreenA from './Components/Sorting-screen-A.jsx';
 import FilterScreenA from './Components/Filters-screen.jsx'; 
-import PackageCard from './Components/Package-card.jsx';// Adjust the path accordingly
+import PackageCard from './Components/Package-card.jsx';
 
 const App = () => {
   return (
