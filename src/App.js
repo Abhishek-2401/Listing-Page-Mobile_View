@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ListingPage from './Components/ListingPage.js';
+import MenuSection from './Components/Menu-Section.jsx';
+import LocationCategories from './Components/Categories.jsx';
+import BottomButtons from './Components/Bottom-buttons.jsx';
+import SortingScreenA from './Components/Sorting-screen-A.jsx';
+import FilterScreenA from './Components/Filters-screen.jsx'; 
+import PackageCard from './Components/Package-card.jsx';// Adjust the path accordingly
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <MenuSection />
+        
+        <LocationCategories />
+        <BottomButtons />
+
+        <Routes>
+          <Route path="/sorting-screen-A" element={<SortingScreenA />} />
+          <Route path="/Filters-screen" element={<FilterScreenA />} />
+          </Routes>
+          <PackageCard />
+
+        <ListingPage />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

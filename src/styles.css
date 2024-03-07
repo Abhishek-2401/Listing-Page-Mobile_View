@@ -1,0 +1,51 @@
+/* Add these styles to your CSS file */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.chevron-down-icon {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.chevron-down-icon-green {
+  background-color: #DDFACF;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.selected-category {
+  background-color: #DDFACF;
+  color: #157939; /* Change this to the desired text color for the selected category */
+}
+
+.top-border::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 39px;
+  height: 5px;
+  background-color: #c8c8c8;
+  border-radius: 5px;
+}
+.radio-button {
+  position: relative;
+  width: 23.09px;
+  height: 23.09px;
+  border: 1.36px solid #000; /* Change color to your desired border color */
+  border-radius: 50%;
+}
+
+input[type=radio] {
+  accent-color: black;
+}
+input[type=checkbox] {
+  accent-color: black;
+}
+.cards{
+  position: static;
+}
