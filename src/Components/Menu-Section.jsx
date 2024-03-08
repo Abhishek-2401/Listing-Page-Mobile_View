@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 import MenuScreen from "./Menu-screen";
 import "../styles.css";
 
-const MobileView = () => {
+const Menu-Section = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [activePackage, setActivePackage] = useState(null);
 
@@ -60,4 +60,4 @@ const MobileView = () => {
   );
 };
 
-export default MobileView;
+export default Menu-Section;
