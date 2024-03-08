@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles.css";
 
-const LocationCategories = () => {
+const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategoryClick = (index) => {
@@ -61,4 +61,4 @@ const LocationCategories = () => {
   );
 };
 
-export default LocationCategories;
+export default Categories;
